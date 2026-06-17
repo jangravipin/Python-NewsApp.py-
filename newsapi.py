@@ -7,9 +7,9 @@ url = f"https://newsapi.org/v2/everything?q={query}&from=2026-05-17&sortBy=publi
 
 print(url)
 
-r = requests.get(url)
+response = requests.get(url)
 
-data = r.json()
+data = response.json()
 articles = data["articles"]
 
 for index, article in enumerate (articles):
