@@ -1,6 +1,6 @@
 import requests
 
-query = "artificial intelligence"
+query = input("What type of news are you interested in today? ")
 api = "2a13fffccd0f452d841077db21cafdb1"
 
 url = f"https://newsapi.org/v2/everything?q={query}&from=2026-05-17&sortBy=publishedAt&apiKey={api}"
